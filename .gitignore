@@ -1,6 +1,17 @@
+# Hugo build output
 /public/
+
+# Hugo cache
 resources/_gen/
+
+# OS-specific
 .DS_Store
+
+# Editor or temp files
 *.log
 *.swp
+*.swo
+*~
+
+# Node (if you use it for asset pipelines)
 node_modules/
