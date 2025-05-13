@@ -1,7 +1,30 @@
-baseURL: https://example.org/
+baseURL: https://mortmain.uk/
 languageCode: en-us
-title: My New Hugo Site
+title: Mortmain
 theme: ["PaperMod"]
 
 params:
   enableGitInfo: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 20
+
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 30
+      
+    - identifier: reading
+      name: Reading
+      url: /reading/
+      weight: 40
+
