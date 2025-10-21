@@ -1,10 +1,31 @@
-baseURL: https://mortmain.uk/
-languageCode: en-us
+baseURL: https://blog.mortmain.uk/
+languageCode: en-gb
 title: Mortmain
-theme: ["PaperMod"]
+theme: PaperMod
+
+pagerSize: 10 
 
 params:
   enableGitInfo: true
+
+  # tell PaperMod which sections count as "posts" for the home list
+  mainSections: ["posts"]
+
+  # home hero block (no need for content/_index.md)
+  homeInfoParams:
+    Title: "🧭 Mortmain"
+    Content: |
+      A field journal on software craft and the human side of technology.
+      Plain-text workflows, Hugo, TiddlyWiki, YAML, and notes from practice.
+      
+      *Think hard. Write well.*
+
+  # nice defaults (optional)
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowShareButtons: true
+  defaultTheme: auto
 
 menu:
   main:
@@ -12,19 +33,15 @@ menu:
       name: About
       url: /about/
       weight: 10
-
     - identifier: contact
       name: Contact
       url: /contact/
       weight: 20
-
     - identifier: posts
       name: Blog
       url: /posts/
       weight: 30
-      
     - identifier: reading
       name: Reading
       url: /reading/
       weight: 40
-
